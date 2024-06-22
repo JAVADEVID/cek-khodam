@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#54372c" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Cari Tahu Khodam Kamu</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="bgtop">
+        <img src="assets/images/bg3.png" alt="Cek Khodam" />
+      </div>
+      <div class="bgbot">
+        <img src="assets/images/bg4.png" alt="Cek Khodam" />
+      </div>
+      <div class="particles">
+        <img src="assets/images/bg6.png" alt="Cek Khodam" />
+      </div>
+      <div class="particles1">
+        <img src="assets/images/bg5.png" alt="Cek Khodam" />
+      </div>
+      <div class="head">
+        <h1>Cek Khodam Online</h1>
+        <p>Cari Tahu Khodam Pendampingmu Disini.</p>
+      </div>
+      <div class="content">
+        <div class="form">
+          <label for="fullname">Tulis Nama Kamu</label>
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Masukkan Nama Kamu"
+            required
+          />
+          <button type="button">Cek Khodam Kamu</button>
+        </div>
+      </div>
+      <div class="foot">
+        <p>Support Kami</p>
+        <script
+          type="text/javascript"
+          src="https://cdn.trakteer.id/js/embed/trbtn.min.js?date=18-11-2023"
+        ></script>
+        <script type="text/javascript">
+          (function () {
+            var trbtnId = trbtn.init(
+              "Traktir Kopi",
+              "#54372C",
+              "https://trakteer.id/javadev/tip",
+              "https://trakteer.id/images/mix/coffee.png",
+              "40"
+            );
+            trbtn.draw(trbtnId);
+          })();
+        </script>
+      </div>
+    </div>
+    <div class="loading">Loading...</div>
+    <div class="popup">
+      <div class="popup-header">
+        <h2>Hasil Khodam Kamu</h2>
+        <p>Khodam pendamping kamu adalah...</p>
+      </div>
+      <div class="popup-content">
+        <div class="results"></div>
+      </div>
+      <button class="close-btn">Cek Ulang ⟳</button>
+    </div>
+    <div class="overlay"></div>
+    <!-- SCRIPTS -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
